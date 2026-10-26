@@ -1,0 +1,15 @@
+# Normalise line endings so Windows and WSL/Linux checkouts agree
+* text=auto eol=lf
+
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Never diff or merge the lockfile line by line
+package-lock.json -diff linguist-generated
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
